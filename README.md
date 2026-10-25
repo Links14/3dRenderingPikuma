@@ -19,28 +19,6 @@ Project for the [Pikuma 3D Computer Graphics Programming course](https://pikuma.
 
 VS Code will build the development image from the Dockerfile and open the project inside the container.
 
-## Build
-
-From the VS Code terminal inside the container:
-
-```bash
-make
-```
-
-Or press `Ctrl+Shift+B` in VS Code.
-
-## Run
-
-```bash
-make run
-```
-
-## Clean
-
-```bash
-make clean
-```
-
 ## Verify dependencies
 
 ```bash
