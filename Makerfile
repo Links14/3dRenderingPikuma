@@ -1,0 +1,20 @@
+
+CC = gcc
+CFLAGS = -Wall -Wextra -Wpedantic -std=c17 -g
+SDL_FLAGS = $(shell pkg-config --cflags --libs sdl2)
+
+SRC = $(wildcard src/*.c)
+TARGET = renderer
+
+.PHONY: all run clean
+
+all: $(TARGET)
+
+$(TARGET): $(SRC)
+	$(CC) $(CFLAGS) $(SRC) -o $(TARGET) $(SDL_FLAGS)
+
+run: $(TARGET)
+	./$(TARGET)
+
+clean:
+	rm -f $(TARGET) *.o

@@ -50,3 +50,22 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+/.vs
+
+
+# Compiled executable
+renderer
+renderer.exe
+
+# Object and debug files
+*.o
+*.obj
+*.pdb
+
+# Build output
+build/
+cmake-build-*/
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
